@@ -111,7 +111,7 @@ RunService.RenderStepped:Connect(function()
     FOVCircle.Thickness = _G.CircleThickness
 
     if Holding == true and _G.AimbotEnabled == true then
-        TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.Easing.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.AimPart].Position)}):Play()
+        TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.AimPart].Position)}):Play()
     end
 end)  
 	end    
