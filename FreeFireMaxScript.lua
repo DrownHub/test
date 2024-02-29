@@ -36,7 +36,7 @@ _G.CircleVisible = true
 _G.CircleThickness = 0
 
 local FOVCircle = Drawing.new("Circle")
-FOVCircle.Position = vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
 FOVCircle.Radius = _G.CircleRadius
 FOVCircle.Filled = _G.CircleFilled
 FOVCircle.Color = _G.CircleColor
@@ -100,7 +100,7 @@ UserInputService.InputEnded:Connect(function(Input)
 end)
 
 RunService.RenderStepped:Connect(function()
-    FOVCircle.Position = vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+    FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
     FOVCircle.Radius = _G.CircleRadius
     FOVCircle.Filled = _G.CircleFilled
     FOVCircle.Color = _G.CircleColor
