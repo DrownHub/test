@@ -32,7 +32,7 @@ _G.CircleColor = Color3.fromRGB(255,255,255)
 _G.CircleTransparency = 0.7
 _G.CircleRadius = 80
 _G.CircleFilled = false
-_G.CircleVisible true
+_G.CircleVisible = true
 _G.CircleThickness = 0
 
 local FOVCircle = Drawing.new("Circle")
