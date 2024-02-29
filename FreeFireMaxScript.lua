@@ -50,7 +50,7 @@ local function GetClosestPlayer()
     local MaximumDistance = _G.CircleRadius
     local Target = nil
 
-    for _, v in nnext, Players:GetPlayers() do
+    for _, v in next, Players:GetPlayers() do
         if v.Name ~= LocalPlayer.Name then
             if _G.TeamCheck == true then
                 if v.Team ~= LocalPlayer.Team then
